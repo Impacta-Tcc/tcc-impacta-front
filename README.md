@@ -7,7 +7,7 @@ Requisitos (Passo a Passo).
 
  2- Acessar a parte de Front-End do projeto, copiar o link do Code (botão verde acima dos commits do projeto), rodar "git clone" mais o testo copiado no terminal Powershell para vincular a sua chave SSH ao projeto.
 
- 3- Aacessar a pasta com a pare de Front-End do projeto (cd + nome da pasta).
+ 3- Acessar a pasta com a pare de Front-End do projeto (cd + nome da pasta).
 
  4- Abrir o VSCode ("Code").
 
