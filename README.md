@@ -1,6 +1,6 @@
 # Procura CEP
 
-Neste Projeto será possivel fazer busca de endereço de qual estado do Brasil.
+Neste Projeto será possivel fazer busca de endereço de qualquer estado do Brasil.
 
 ## 🚀 Começando
 
@@ -23,29 +23,29 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 Diga como essa etapa será:
 
 ```
-2- Acesse a parte do Front-End do projeto, copie o link do Code (botão verde acima dos commits do projeto), rode "git clone" mais o testo copiado no terminal Powershell para vincular sua chave SSH ao projeto.
+1- Acesse a parte do Front-End do projeto, copie o link do Code (botão verde acima dos commits do projeto), rode "git clone" mais o testo copiado no terminal Powershell para vincular sua chave SSH ao projeto.
 
-3- Acesse a pasta com a parede de Front-End do projeto (cd + nome da pasta).
+2- Acesse a pasta com a parede de Front-End do projeto (cd + nome da pasta).
 
-4- Abrir o VSCode ("Código").
+3- Abrir o VSCode ("Código").
 
-5- Copiar o texto da parte do Back-End do projeto (Passo1).
+4- Copiar o texto da parte do Back-End do projeto (Passo1).
 
-6- No terminal PowerShell voltar 1 pasta ("cd ../")
+5- No terminal PowerShell voltar 1 pasta ("cd ../")
 ```
 
 E repita:
 
 ```
-7- Repita os passos 2,3 e 4, mas desta vez com o texto Back-End.
+6- Repita os passos 2,3 e 4, mas desta vez com o texto Back-End.
 
-8- Com o VSCode do Back-End aberto, crie o objeto .gitignore com o node_modules.
+7- Com o VSCode do Back-End aberto, crie o objeto .gitignore com o node_modules.
 
-9- Rodar "npm install" nos dois VSCode, tanto Back-End quanto Front-End.
+8- Rodar "npm install" nos dois VSCode, tanto Back-End quanto Front-End.
 
-10- Rodar "npm run dev" nos dois VSCode, tanto Back-End quanto Front-En
+9- Rodar "npm run dev" nos dois VSCode, tanto Back-End quanto Front-En
 
-11- no terminal de Front-End, Ctrl + clique no localhost que aparece no terminal.
+10- no terminal de Front-End, Ctrl + clique no localhost que aparece no terminal.
 
-12- Pronto, uma API já está disponível para pesquisar CEP.
+11- Pronto, uma API já está disponível para pesquisar CEP.
 
