@@ -37,7 +37,7 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 ```
 ---
 ```
-4- no terminal de Front-End, Ctrl + clique no localhost que aparece no terminal
+4- No terminal de Front-End, Ctrl + clique no localhost que aparece no terminal
 ```
 ---
 ```
