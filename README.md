@@ -24,16 +24,22 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 ```
 1- Acesse a parte do Front-End do projeto, após isso insira o seguinte código:
 "cd + nome da pasta".
-
 ```
+---
 ```
 2- Crie o .gitignore com o node_modules.
 ```
+---
 ```
 3- Rode o comando "npm install" no editor de código.
 ```
+---
+```
 4- no terminal de Front-End, Ctrl + clique no localhost que aparece no terminal
+```
+---
 ```
 5 - Pronto, uma API já está disponível para pesquisar CEP.
 ```
+---
 
