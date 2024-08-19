@@ -11,6 +11,8 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 De que coisas você precisa para instalar o software ?
 
+###### Sugestões
+
 ```
 NodeJs
 VSCode
