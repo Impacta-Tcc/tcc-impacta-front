@@ -11,37 +11,36 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 De que coisas você precisa para instalar o software ?
 
-###### Sugestões:
-
 ```
 NodeJs
-VSCode
-Atom
+NPM
+
 ```
 
 ### 🔧 Instalação
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
+###### Passo 1
 ```
-1- Acesse a parte do Front-End do projeto, após isso insira o seguinte código:
-"cd + nome da pasta".
-```
----
-```
-2- Crie o .gitignore com o node_modules.
+[npm install]
 ```
 ---
+###### Passo 2
 ```
-3- Rode o comando "npm install" no editor de código.
-```
----
-```
-4- No terminal de Front-End, Ctrl + clique no localhost que aparece no terminal
+[npm run dev]
 ```
 ---
+###### Passo 3
 ```
-5 - Pronto, uma API já está disponível para pesquisar CEP.
+Clique [Ctrl + localhost] no terminal
 ```
 ---
+###### Passo 4
+```
+Pronto, uma API já está disponível para pesquisar CEP.
+```
+---
+
+
 
