@@ -8,5 +8,6 @@ export interface viaCepResult {
   "ibge": string,
   "gia": string,
   "ddd": string,
-  "siafi": string
+  "siafi": string,
+  "regiao":string
 }

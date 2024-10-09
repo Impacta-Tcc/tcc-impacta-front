@@ -2,6 +2,8 @@ import React from 'react';
 import { viaCepResult } from './api/contracts/viaCep';
 import { getCepHistorico } from './helpers/getInfoViacep';
 import CepInformations from './modules/CepInformations';
+import { ClockIcon } from '@heroicons/react/16/solid';
+import NavBar from './modules/Navbar';
 
 type Status = 'Loading' | 'Success' | 'Error';
 
@@ -26,12 +28,17 @@ const HistoryPage = () => {
 
   return (
     <>
+      <NavBar />
+      <div className="flex justify-center mt-5">
+        <ClockIcon className="size-6 text-gray-600 mr-2"/>
+        <h1 className='font-semibold leading-6 text-gray-900 text-center'>
+          Histórico de pesquisa de ceps
+        </h1>
+      </div>
       {status === 'Loading' && <>Carregando ...</>}
       {status === 'Error' && <>Erro!</>}
       {status === 'Success' && data && (
-        data.map((dataObj)=>
-          <CepInformations {...dataObj} />
-        )
+          <CepInformations  list={data} />
       )}
     </>
   );

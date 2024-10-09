@@ -3,8 +3,8 @@ import { viaCepResult } from "../api/contracts/viaCep";
 
 export async function getInfoViaCepByZipCode(cep: string): Promise<viaCepResult> {
   try {
-  const result: viaCepResult = ((await axios.get(`http://localhost:7500/consulta-cep?cep=${cep}`)).data)
-  return result
+    const response = await axios.get(`http://localhost:7500/consulta-cep?cep=${cep}`)
+    return response.data
   }catch (error) {
     console.error('Erro ao buscar histórico de CEP:', error);
     throw new Error('Não foi possível buscar o histórico de CEP');
