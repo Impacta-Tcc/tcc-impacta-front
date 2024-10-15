@@ -3,24 +3,23 @@ import { viaCepResult } from './api/contracts/viaCep'
 import { getInfoViaCepByZipCode } from './helpers/getInfoViacep'
 import CepInformations from './modules/CepInformations'
 import NavBar from './modules/Navbar'
+import { InputCep } from 'react-input-cep'
 type Status = 'Loading' | 'Success' | 'Error'
 
 const HomePage = () => {
-  const [cepToSearch, setCepToSearch] = React.useState<string>()
-  const [cep] = React.useState()
+  const [isCepLoading, setIsCepLoading] = React.useState(false)
+  const [cep, setCep] = React.useState<string>('')
+  const [errorMsg] = React.useState<string>('')
+
   const [status, setStatus] = React.useState<Status>()
   const [data, setData] = React.useState<viaCepResult[] | undefined>()
 
-
-  function handleChangeSearchCep(text: ChangeEvent<HTMLInputElement>) {
-    setCepToSearch(text.target.value)
-  }
   async function handleConsultViaCep(event: any) {
     try {
       event.preventDefault();
-      if (cepToSearch) {
+      if (cep) {
         setStatus('Loading');
-        const dataInfoCep: viaCepResult | { erro: "true" } = await getInfoViaCepByZipCode(cepToSearch);
+        const dataInfoCep: viaCepResult | { erro: "true" } = await getInfoViaCepByZipCode(cep);
         let listDataInfo: viaCepResult[] = [];
   
         if ('erro' in dataInfoCep && dataInfoCep.erro === "true") {
@@ -41,13 +40,14 @@ const HomePage = () => {
     <NavBar />
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <form onSubmit={handleConsultViaCep}>
-        <label htmlFor="consultCep" className="block text-sm font-medium leading-6 text-gray-900">
-          Digite o Cep que deseja consultar:
-        </label>
         <div className="mt-2">
-          <input type="text" name="consultCep" id="consultCep" 
-            value={cep} onChange={(text) => handleChangeSearchCep(text)} maxLength={10} 
-            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          <InputCep 
+            placeholder="Digite o Cep que deseja consultar:"
+            name="cep"
+            onValueChange={value => setCep(value)}
+            onLoading={(loadingStatus) => setIsCepLoading(loadingStatus)}
+            disabled={isCepLoading}
+            errorMsg={errorMsg}
           />
         </div>
         <input type="submit" value="Consultar" 
